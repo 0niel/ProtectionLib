@@ -27,6 +27,7 @@ softdepend:
  - Lands
  - SuperiorSkyblock2
  - Factions
+ - UltimateClaims
 main: de.Ste3et_C0st.ProtectionLib.main.ProtectionLib
 api-version: 1.13
 commands:

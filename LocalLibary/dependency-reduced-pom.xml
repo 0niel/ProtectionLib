@@ -90,5 +90,12 @@
       <scope>system</scope>
       <systemPath>${project.basedir}/lib/AreaShop.jar</systemPath>
     </dependency>
+    <dependency>
+        <groupId>com.craftaro</groupId>
+        <artifactId>UltimateClaims</artifactId>
+        <version>2.4.0</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/lib/UltimateClaims-2.4.0.jar</systemPath>
+    </dependency>
   </dependencies>
 </project>

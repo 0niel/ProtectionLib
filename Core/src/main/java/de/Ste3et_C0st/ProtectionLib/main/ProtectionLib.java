@@ -7,6 +7,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
 import java.util.logging.Level;
+
+import de.Ste3et_C0st.ProtectionLib.main.plugins.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -15,19 +17,6 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.Ste3et_C0st.ProtectionLib.exception.ProtectionCreateException;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fBentobox;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fDiceChunk;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fFabledSkyblock;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fFactionsUUID;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fGriefPrevention;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fGriefdefenderAPI;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fKingdoms;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fLandLord;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fLands;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fSuperiorSkyblock;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fTowny;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fWorldGuardv7;
-import de.Ste3et_C0st.ProtectionLib.main.plugins.fuSkyblock;
 import de.Ste3et_C0st.ProtectionLib.main.utils.Metrics;
 import de.Ste3et_C0st.ProtectionLib.main.utils.Version;
 
@@ -123,6 +112,7 @@ public class ProtectionLib extends JavaPlugin{
 		protectetionMap.put(fTowny.class, new ProtectionPluginFilter("Towny"));
 		protectetionMap.put(fuSkyblock.class, new ProtectionPluginFilter("uSkyblock"));
 		protectetionMap.put(fWorldGuardv7.class, new ProtectionPluginFilter("WorldGuard").isVersion(7));
+		protectetionMap.put(fUltimateClaims.class, new ProtectionPluginFilter("UltimateClaims"));
 
 		try {
 			this.registerModules("LocalLibary", protectetionMap);
